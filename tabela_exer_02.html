@@ -1,56 +1,23 @@
 <html>
-    <title>Minha Tabela - Exercício 1</title>
+    <title>Minha Tabela - Exercício 2</title>
+
+
 <head>
     
-<style>
-* {
-  box-sizing: border-box;
-}
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="./js/scripts.js" defer></script>
+    
+    <h1>Destaques de carros e motos</h1>
+    <p>Confira o que temos para você:</p>
 
-.row {
-  margin-left:5px;
-  margin-right:5px;
-}
-  
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  border: 1px solid rgb(5, 53, 11);
-}
-
-th, td {
-  text-align:center;
-  padding: 16px;
-}
-
-tr:nth-child(even) {
-  background-color: #e38585;
-}
-</style>
 </head>
 
 <body>
 
-<h1>Destaques de carros e motos</h1>
-<p>Confira o que temos para você:</p>
-
 <div class="row">
-  <div class="column">
-    <table>
+  <div class="column-carro">
+    <table id="tabela-carros" align="center">
       <tr>
         <th align="center" valign="middle"> Marca</th>
         <th align="center" valign="middle">Modelo</th>
@@ -95,8 +62,10 @@ tr:nth-child(even) {
       </tr>
     </table>
   </div>
-  <div class="column">
-    <table align="center">
+
+
+  <div class="column-moto">
+    <table id="tabela-motos" align="center">
       <tr>
         <th width="25%" align="center" valign="middle">Marca</th>
         <th width="25%" align="center" valign="middle">Modelo</th>
@@ -120,6 +89,6 @@ tr:nth-child(even) {
     </table>
   </div>
 </div>
-
+    
 </body>
 </html>
