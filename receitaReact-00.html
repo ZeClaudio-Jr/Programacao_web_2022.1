@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+
+      <title>React 00</title>      
+
+   </head>
+
+   <body>
+
+      <div id="app">
+
+      </div>
+
+      <script src="libs/react.js"></script>
+
+      <script src="libs/react-dom.js"></script>
+
+      <script>
+
+      //   ReactDOM.render(
+
+      //    React.createElement(
+
+      //       'h1', //Marca
+
+      //       {id: 'my-heading'}, //Propriedades (como um objeto)
+
+      //       React.createElement(  //Conteúdo da marca - início elemento1
+
+      //          'span',
+
+      //          null,
+
+      //          'React ',
+
+      //          React.createElement('em', null, 'é muito'),
+
+      //       ),  //Conteúdo da marca - fim elemento1
+
+      //       ' massa!'  //Conteúdo da marca - elemento2
+
+      //    ),
+
+      //       document.getElementById('app')
+
+      //   );
+      ReactDOM.render(
+
+         React.createElement(
+
+            'table',
+
+            {id: 'tabela', border:'2'},
+
+            React.createElement(
+
+               'tr',
+
+               null,                  
+
+               React.createElement('th', null, 'Nome'),
+
+               React.createElement('th', null, 'Quantidade')
+
+            ),
+
+            React.createElement(
+
+               'tr',
+
+               null,                  
+
+               React.createElement('td', null, 'Copo 300ml'),
+
+               React.createElement('td', null, '50')
+
+            )
+
+         ),
+
+         document.getElementById("app"))
+      
+      
+      // function myFunction() {
+      //       var x = document.createElement("TABLE");
+      //       x.setAttribute("id", "myTable");
+      //       document.body.appendChild(x);
+
+      //       var y = document.createElement("TR");
+      //       y.setAttribute("id", "myTr");
+      //       document.getElementById("myTable").appendChild(y);
+
+      //       var z = document.createElement("TD");
+      //       var t = document.createTextNode("cell");
+      //       z.appendChild(t);
+      //       document.getElementById("myTr").appendChild(z);
+      // }
+        
+
+      </script>
+
+   </body>
+
+</html>
+
+<!-- No <div> logo abaixo do <body> o react vai renderizar a interface gráfica de nossa página. Na última marca <script> vamos dizer para o react fazer isso. As duas primeiras marcas <script> fazem a "importação" das bibliotecas do react de que precisaremos para nossas tarefas (há diversas outras "bibliotecas" no react). Se você teve dificuldade em fazer o download das bibliotecas, pode substituir as duas primeiras marcas script por:
+
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+Outrossim, o "@17" nas URL's acima refere-se à última versão do React 17 quando da produção deste material.
+
+Passo 6
+Dentro da última marca <script> (a vazia e sem atributos), acrescente o seguinte código:
+
+
+ -->
