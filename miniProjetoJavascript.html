@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #imagem {
+            align-content: center;
+
+        }
+
+        table {
+          align-items: center;
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 50%;
+          border: 1px solid rgb(90, 16, 16);
+        }
+        
+        th {
+          background-color: rgb(211, 102, 7);
+          text-emphasis-color: ;
+
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 16px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #ecacac;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <table>
+            <thead>
+                <tr>
+                    <!-- <th class="cabecalhoTitulo"> Título </th>
+                    <th class="cabecalhoAno"> Ano </th>
+                    <th class="cabecalhoScore"> Score </th>
+                    <th class="cabecalhoImagem"> Imagem </th> -->
+                </tr>
+
+            </thead>
+
+            <tbody id="tabela">
+                                
+            </tbody>
+            
+        </table>
+
+        <div id="imagem"> </div>
+
+       
+
+
+
+        <script>
+        
+        // var colunas = document.querySelectorAll('.cabecalhoTitulo');
+
+        // colunas.forEach(c => c.addEventListener("click", (event) => {
+        //     console.log(event.target.textContent)
+        // }))
+
+        
+        var animes = [
+  
+      {
+  
+        url: "https://myanimelist.net/anime/1535/Death_Note",
+  
+        image_url: "https://cdn.myanimelist.net/images/anime/9/9453.jpg?s=b89e80691ac5cc0610847ccbe0b8424a",
+  
+        title: "Death Note",
+  
+        score: 8.63,
+  
+        start_date: "2006-10-04T00:00:00+00:00",
+  
+      },
+  
+      {
+  
+        url: "https://myanimelist.net/anime/28223/Death_Parade",
+  
+        image_url: "https://cdn.myanimelist.net/images/anime/5/71553.jpg?s=68833377dab9077cd7847c91eec46f08",
+  
+        title: "Death Parade",
+  
+        score: 8.18,
+  
+        start_date: "2015-01-10T00:00:00+00:00",
+  
+      },
+  
+      {
+  
+        url: "https://myanimelist.net/anime/14353/Death_Billiards",
+  
+        image_url: "https://cdn.myanimelist.net/images/anime/11/48721.jpg?s=4728f1efeabefb313634e64ac91f514b",
+  
+        title: "Death Billiards",
+  
+        score: 7.91,
+  
+        start_date: "2013-03-02T00:00:00+00:00",
+  
+      }
+  
+  ]
+  
+             
+          function tabelaAnimes(){
+  
+              return animes.map(f => `
+              
+              <tr>
+                  <td > <a href="#" target="_blank" > ${f.title}</a> </td>
+                  <td> ${new Date(f.start_date).getFullYear()} </td>
+                  <td> ${f.score} </td>
+                  <td> <a href="#" onclick="carregarImagem(event,'${f.image_url}')">Carregar</a> </td>
+              </tr>`)
+  
+              // <div>
+              //     <a href="#" target="_blank" > ${f.title} </a> - ${new Date(f.start_date).getFullYear()} - ${f.score} - <a href="#" onclick="carregarImagem(event,'${f.image_url}')">Carregar</a> 
+              
+              // </div>`)
+  
+          } 
+  
+             
+           //isso é uma função...                        
+  
+          const carregarImagem = (event, url) => {
+  
+              event.preventDefault()
+  
+              document.getElementById("imagem").innerHTML = `<img src="${url}"  width="200px"/>`
+  
+          }
+  
+                                           
+  
+           document.getElementById("tabela").innerHTML = `
+           
+                <tr>
+                    <th id="tituloT"> Título </a></th>
+                    <th> Ano </th>
+                    <th> Score </th>
+                    <th> Imagem </th>
+                </tr>
+            
+           
+           <br/> ${tabelaAnimes().join('\n')}`;
+
+           
+            animes.sort((a,b) => {
+
+            if (a.title < b.title) return 1;
+
+            if (a.title > b.title) return -1;
+
+            return 0;
+
+
+            });
+
+            // const tituloSort = [];
+            // document.getElementById("tabela").innerHTML = tituloSort;  
+
+            // function ordenation() {
+
+            //     tituloSort.sort(function(a, b){return a - b});
+            //     document.getElementById("tabela").innerHTML = tituloSort;
+            // }
+  
+        </script>
+  
+      </body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
