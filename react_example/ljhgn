@@ -4,39 +4,37 @@
 
    <head>
 
-      <title> React 01 </title>      
+      <title>ReceitaReact - 2</title>      
 
    </head>
 
-
-   
    <body>
 
       <div id="app">
 
+      
+
       </div>
+
 
 
       <script src="libs/react.js"></script>
 
       <script src="libs/react-dom.js"></script>
-      
+
       <script src="libs/babel.js"></script>
 
-      
+            
+
       <script type="text/babel">
 
-         const Cabecalho = () => {
             
+
+         const TabelaBebidas = () => {
+
             return (
 
-                  <h1>Minha tabela de bebidas</h1>
-            )
-         }
-                  
-         const TabelaBebidas = () => {
-            
-            return (
+               <div>
 
                   <h1>Tabela de Bebidas</h1>
 
@@ -44,39 +42,35 @@
 
                      <thead>
 
-                        <tr><th>Nome</th><th>Marca</th><th>Volume</th></tr>
+                        <tr><th>Nome</th><th>Marca</th></tr>
 
                      </thead>
 
-
                      <tbody>
 
-                        <tr>
-                           <td>Cabacinha</td>
-                           <td>Engenho Poderoso</td>
-                           <td>1 L</td>
-                        </tr>
+                        <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
 
                      </tbody>
 
                   </table>
-            )
+
+               </div>
+
+            )  
+
          }
 
          
 
          ReactDOM.render(
-               
-            <div>
 
-               <Cabecalho/>
-               <TabelaBebidas/>
-            
-            </div>
+            <TabelaBebidas/>
 
             ,
 
             document.getElementById("app"))
+
+
 
       </script>
 
