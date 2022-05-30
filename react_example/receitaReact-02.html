@@ -1,1 +1,172 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+
+    <title>ReceitaReact - 2</title>
+
+</head>
+
+<body>
+
+    <div id="app">
+
+
+
+    </div>
+
+
+
+    <script src="libs/react.js"></script>
+
+    <script src="libs/react-dom.js"></script>
+
+    <script src="libs/babel.js" charset="utf-8"></script>
+
+
+
+    <script type="text/babel">
+
+
+
+        class TabelaBebidas extends React.Component {
+
+
+            render() {
+
+                return (
+
+                    <div>
+
+                        <NomeTabela  titulo="Tabela de Cana"/>
+
+
+                        <table id="tabela" border="1">
+
+                            <thead>
+
+                                <tr><th>Nome</th><th>Marca</th></tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                )
+
+            }
+
+
+
+        }
+
+        class TabelaCarros extends React.Component {
+
+
+
+            render() {
+
+                return (
+
+                    <div>
+
+                        <NomeTabela  titulo="Tabela de Carros"/>
+
+                        <table id="tabela" border="1">
+
+                            <thead>
+
+                                <tr><th>Nome</th><th>Marca</th></tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr><td>Polo</td><td>Volkswagen</td></tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                )
+
+            }
+
+
+
+        }
+
+        class TabelaMotos extends React.Component {
+
+
+
+            render() {
+
+                return (
+
+                    <div>
+
+                        <NomeTabela  titulo="Tabela de Motos"/>
+
+                        <table id="tabela" border="1">
+
+                            <thead>
+
+                                <tr><th>Nome</th><th>Marca</th></tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr><td>Titan</td><td>Honda</td></tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                )
+
+            }
+
+
+        }
+
+        class NomeTabela extends React.Component {
+
+            render() {
+                return <h1>{this.props.titulo}</h1>
+            }
+        }
+
+
+        ReactDOM.render(
+
+            <div>
+
+                <TabelaBebidas/>
+                <TabelaCarros />
+                <TabelaMotos/>
+
+            </div>
+            ,
+
+            document.getElementById("app"))
+
+
+    </script>
+
+</body>
+
+</html>
