@@ -18,13 +18,13 @@
 
       table {
         border-collapse: collapse;
-        width: 50%;
+        width: 65%;
       }
 
       th,
       td {
         text-align: center;
-        padding: 8px;
+        padding: 15px;
       }
 
       tr:nth-child(even) {
@@ -54,6 +54,7 @@
         cabecalhos: [cabecalho1, cabecalho2, cabecalho3],
         corpoTabela_a: [corpoTabela1, corpoTabela2, corpoTabela3],
         corpoTabela_b: [corpoTabela4, corpoTabela5, corpoTabela6],
+        corpoTabela_c: [corpoTabela7, corpoTabela8, corpoTabela9],
       }) => {
         return (
           <div align="center">
@@ -80,6 +81,11 @@
                   <td>{corpoTabela5}</td>
                   <td>{corpoTabela6}</td>
                 </tr>
+                <tr>
+                  <td>{corpoTabela7}</td>
+                  <td>{corpoTabela8}</td>
+                  <td>{corpoTabela9}</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -92,6 +98,7 @@
 
       const valoresCorpo1 = ["Cabacinha", "Poderosa", "Minas Gerais"];
       const valoresCorpo2 = ["Maluca", "Doida", "Goiás"];
+      const valoresCorpo3 = ["Cabrita", "Degust", "Pará"];
 
       //let [cab1, cab2] = cabecalhos;
 
@@ -104,6 +111,7 @@
           cabecalhos={valoresCabecalhos}
           corpoTabela_a={valoresCorpo1}
           corpoTabela_b={valoresCorpo2}
+          corpoTabela_c={valoresCorpo3}
         />,
 
         document.getElementById("app")
