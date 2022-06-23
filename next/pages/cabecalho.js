@@ -1,4 +1,4 @@
-export default function Cabecalho(){
+function Cabecalho(){
 
     return (
  
@@ -15,3 +15,5 @@ export default function Cabecalho(){
     )
  
  }
+
+module.exports = {Cabecalho}
