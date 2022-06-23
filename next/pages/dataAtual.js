@@ -1,4 +1,4 @@
-export default function dataAtual() {
+function DataAtual() {
 
     return (
 
@@ -21,3 +21,5 @@ export default function dataAtual() {
     )
 
 }
+
+module.exports = {DataAtual}
