@@ -1,3 +1,4 @@
+const meg = require("./função")
 export default function Home(){
 
     return (
