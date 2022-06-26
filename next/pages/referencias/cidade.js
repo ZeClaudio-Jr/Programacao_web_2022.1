@@ -1,10 +1,10 @@
-export function Caico(){
+export function Caico(){ //OK
 
     return (
  
        <div>
  
-          <h1>Meu pedacinho do céu. </h1>
+          <h1>"Meu pedacinho do céu", preparamos </h1>
            
        </div>
  
@@ -17,7 +17,7 @@ export function Caico(){
 
     return (
  
-       <h2>O encontro da sua família...</h2>
+       <h2> O encontro das nossas famílias...</h2>
  
     )
  

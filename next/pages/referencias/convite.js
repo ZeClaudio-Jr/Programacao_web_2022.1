@@ -1,4 +1,4 @@
-import { Bebida } from '../seguranca/precaucao'
+import { Religiao } from '../seguranca/precaucao'
 
 const Caico = require('./cidade')
 
@@ -8,7 +8,7 @@ export function Nss(){  //OK
  
        <div>
  
-          <h1>Nossa Senhora de Santana, em <Caico/><Bebida/></h1>
+          <h1>Nossa Senhora de Santana, em <Caico/>, <Religiao/></h1>
           
        </div>
  
@@ -16,7 +16,5 @@ export function Nss(){  //OK
  
  }
 
-
- 
 
  module.exports = Nss

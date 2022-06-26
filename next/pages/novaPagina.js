@@ -10,7 +10,7 @@ export default function Principal(){
  
        <div>
  
-          <h2>Nós que fazemos a festa de <Nss/>........<ContRegr/> e <MariaPrea/></h2>
+          <h2>  Nós que fazemos a festa de <Convite.Nss/>. <ContagemRegres.ContRegr/> e <MariaPrea/></h2>
 
           
        </div>
