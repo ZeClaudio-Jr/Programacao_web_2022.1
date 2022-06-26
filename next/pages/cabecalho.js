@@ -1,4 +1,4 @@
-const cabecalho =  function(){
+const cabecalho = function(){
 
     return (
  

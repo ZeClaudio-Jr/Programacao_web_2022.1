@@ -1,4 +1,4 @@
-export default function dataAtual() {
+const dataAtual = function() {
 
   return (
 
@@ -16,4 +16,4 @@ export default function dataAtual() {
   
 }
 
-module.exports = dataAtual;
+module.exports = dataAtual
