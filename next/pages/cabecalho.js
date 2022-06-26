@@ -8,7 +8,7 @@ const cabecalho = function(){
  
           <h1>
  
-            O mês da Minha Madrinha amada.., <Nss/>
+            O mês da Minha Madrinha amada..,
  
           </h1>
  
