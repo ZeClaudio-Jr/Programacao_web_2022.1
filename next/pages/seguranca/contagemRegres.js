@@ -20,7 +20,7 @@ export function ContRegr(){  //OK
 
     return (
  
-       <h2><Family/>. Estão todos convidados. Evitem <Bebida/></></h2>
+       <h2><Family/>. Estão todos convidados. Evitem <Bebida/></h2>
  
     )
  
