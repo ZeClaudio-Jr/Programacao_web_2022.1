@@ -1,4 +1,4 @@
-function Cabecalho(){
+const cabecalho =  function(){
 
     return (
  
@@ -6,7 +6,7 @@ function Cabecalho(){
  
           <h1>
  
-            Minha Madrinha amada..
+            O mês da Minha Madrinha amada..
  
           </h1>
  
@@ -16,4 +16,4 @@ function Cabecalho(){
  
  }
 
-module.exports = {Cabecalho}
+module.exports = cabecalho

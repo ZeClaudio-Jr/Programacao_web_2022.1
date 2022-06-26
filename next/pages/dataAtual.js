@@ -1,25 +1,19 @@
-function DataAtual() {
+export default function dataAtual() {
 
-    return (
+  return (
 
-        <div>
+    <div>
 
-        var data = new Date();
+      <h1>
 
-        var dia = String(data.getDate()).padStart(2, '0');
+        Está chegando o melhor mês do ano, JULHO!!
 
-        var mes = String(data.getMonth() + 1).padStart(2, '0');
+      </h1>
 
-        var ano = data.getFullYear();
+    </div>
 
-        dataAtual = dia + '/' + mes + '/' + ano;
-
-        console.log(dataAtual);
-
-        </div>
-
-    )
-
+  );
+  
 }
 
-module.exports = {DataAtual}
+module.exports = dataAtual;
