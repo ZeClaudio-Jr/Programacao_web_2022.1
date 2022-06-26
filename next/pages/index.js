@@ -7,9 +7,9 @@ export default function Home() {
 
     <div>
 
-      <DataAtual />
+      <DataAtual/>
 
-      <Cabecalho />
+      <Cabecalho/>
 
       <h2>Viva Santana!</h2>
 

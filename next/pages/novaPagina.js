@@ -1,13 +1,18 @@
+const ContagemRegres = require('./seguranca/contagemRegres')
+const Precaucao = require('./seguranca/precaucao')
+const Convite = require('./referencias/convite')
+const Cidade = require('./referencias/cidade')
+
+
 export default function Principal(){
 
     return (
  
        <div>
  
-          <h1>Nova Página</h1>
+          <h2>Nós que fazemos a festa de <Nss/>........<ContRegr/> e <MariaPrea/></h2>
 
-          <MariaPrea/>
- 
+          
        </div>
  
     )
@@ -15,11 +20,11 @@ export default function Principal(){
  }
 
 
- export function MariaPrea(){
+ export function MariaPrea(){  //OK
 
     return (
  
-       <h2>Morreu Maria Preá...</h2>
+       <h1>morreu Maria Preá...</h1>
  
     )
  
