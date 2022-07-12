@@ -1,19 +1,40 @@
-const dataAtual = function() {
+function DataAtual(){
 
-  return (
+    return (
+ 
+       <div>
+ 
+          <h1>
 
-    <div>
+            Está chegando o melhor mês do ano, JULHO!!
+ 
+          </h1>
+ 
+       </div>
+ 
+    )
+ 
+ }
+ 
+export default DataAtual 
 
-      <h1>
 
-        Está chegando o melhor mês do ano, JULHO!!
+// const dataAtual = function() {
 
-      </h1>
-
-    </div>
-
-  );
+//     return (
   
-}
-
-module.exports = dataAtual
+//       <div>
+  
+//         <h1>
+  
+//           Está chegando o melhor mês do ano, JULHO!!
+  
+//         </h1>
+  
+//       </div>
+  
+//     );
+    
+//   }
+  
+//   module.exports = dataAtual
