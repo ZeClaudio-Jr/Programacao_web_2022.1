@@ -1,13 +1,11 @@
-const Convite = require('./referencias/convite')
-
-const cabecalho = function(){
+function Cabecalho(){
 
     return (
  
        <div>
  
           <h1>
- 
+
             O mês da Minha Madrinha amada..,
  
           </h1>
@@ -16,6 +14,29 @@ const cabecalho = function(){
  
     )
  
- }
+}
+ 
+export default Cabecalho 
 
-module.exports = cabecalho
+
+// const Convite = require('./referencias/convite')
+
+// const cabecalho = function(){
+
+//     return (
+
+//     <div>
+
+//         <h1>
+
+//             O mês da Minha Madrinha amada..,
+
+//         </h1>
+
+//     </div>
+
+//     )
+
+// }
+
+// module.exports = cabecalho
