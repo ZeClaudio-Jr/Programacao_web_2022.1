@@ -133,7 +133,7 @@ export default function Movies({data}){
 
             <div>
 
-                {data.Search.map( (m) => <div>{m.Title} --- {m.Year} --- <image src={`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`}></image></div>  )}               
+                {data.Search.map( (m) => <div>{m.Title} --- {m.Year} --- {m.poster} <image src={`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`}></image></div>  )}               
 
             </div>
 
