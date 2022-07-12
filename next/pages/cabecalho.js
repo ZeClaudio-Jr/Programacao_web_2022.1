@@ -16,7 +16,14 @@ function Cabecalho(){
  
 }
  
-export default Cabecalho 
+module.exports = Cabecalho
+
+
+//export default Cabecalho *Exportação por default
+
+
+
+
 
 
 // const Convite = require('./referencias/convite')
