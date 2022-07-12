@@ -16,7 +16,10 @@ function DataAtual(){
  
  }
  
-export default DataAtual 
+module.exports = DataAtual
+
+
+//export default DataAtual *Outra alternativa para exportação(por default)
 
 
 // const dataAtual = function() {
