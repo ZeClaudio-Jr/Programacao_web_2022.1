@@ -24,3 +24,5 @@ hs_err_pid*
 
 next/node_modules/
 node_modules/
+**/node_modules
+node_modules

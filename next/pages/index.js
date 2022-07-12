@@ -1,23 +1,26 @@
-const Cabecalho = require("./cabecalho");
-const DataAtual = require("./dataAtual");
+import Cabecalho from "./cabecalho";
+import DataAtual from "./dataatual";
 
-export default function Home() {
+//const DataAtual = require("./dataAtual"); *Quando usar dessa forma?
 
-  return (
+function Home() {
+        
+    return (
 
-    <div>
+        <div>
 
-      <DataAtual/>
+            <DataAtual/>
 
-      <Cabecalho/>
+            <Cabecalho/>
+            
+            <h2>Viva Santana!</h2>
 
-      <h2>Viva Santana!</h2>
-
-    </div>
-
-  )
-  
+        </div>
+    );
 }
+
+export default Home;
+
 
 // export default function Home(){
 
