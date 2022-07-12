@@ -1,16 +1,16 @@
-export default function Movies() {
+// export default function Movies() {
 
-    <div>
+//     <div>
 
-        <div>
+//         <div>
 
-            {data.Search.map((m) => <div>{m.Title}   - - -  {m.Year} <img src={m.poster} width="220px" /></div>)}
-
-
-        </div>
+//             {data.Search.map((m) => <div>{m.Title}   - - -  {m.Year} <img src={m.poster} width="220px" /></div>)}
 
 
-    </div>
+//         </div>
+
+
+//     </div>
 
     /*    const data = {
     
@@ -123,6 +123,27 @@ export default function Movies() {
     } 
     
     */
+
+
+export default function Movies({data}){
+
+    return (
+
+        <div>
+
+            <div>
+
+                {data.Search.map( (m) => <div>{m.Title} --- {m.Year} --- <image src={`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`}></image></div>  )}               
+
+            </div>
+
+        </div>
+
+    )
+
+}
+
+
 
 export async function getServerSideProps(context) {
     const res = await fetch(`http://www.omdbapi.com/?apikey=c8f0306e&s=bagdad`)
