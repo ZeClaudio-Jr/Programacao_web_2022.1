@@ -35,13 +35,11 @@
 //     return json
 
 // }
-
-
 import useSWR from 'swr'
 
 export default function Movies2(){
 
-    const {data, error} = useSWR(`http://www.omdbapi.com/?apikey=c8f0306e&s=bagdad`, fetcher)    
+    const {data, error} = useSWR(`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`, fetcher)    
 
     if (error) return <div>falha na requisição...</div>
 
