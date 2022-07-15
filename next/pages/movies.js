@@ -133,8 +133,8 @@ export default function Movies({data}){
 
             <div>
 
-                {data.Search.map( (m) => <div>{m.Title} --- {m.Year} --- {m.Poster.value}</div> )}
-                //{data.Search.map( (m) => <div>{m.Title} --- {m.Year} --- {m.poster} <image src={`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`}></image></div>  )}               
+                {data.Search.map( (m) => <div> <div>{m.Title}</div> <div>{m.Year}</div> <div> <img src={m.Poster} width="300px" height="200px"/>  </div>  </div>  )}
+                            
 
             </div>
 
@@ -147,7 +147,7 @@ export default function Movies({data}){
 
 
 export async function getServerSideProps(context) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=c8f0306e&s=bagdad`)
+    const res = await fetch(`http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad`)
     const data = await res.json()
     return {
         props: {
