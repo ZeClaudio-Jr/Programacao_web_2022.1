@@ -124,7 +124,6 @@
     
     */
 
-
 export default function Movies({data}){
 
     return (
