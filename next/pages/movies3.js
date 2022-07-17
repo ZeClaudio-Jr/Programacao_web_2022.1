@@ -41,6 +41,9 @@ export default function Movies3(){
 }
 
 
+
+
+
 export function TheMovies({data,show}){
 
     if (!show) return (<div></div>)    
