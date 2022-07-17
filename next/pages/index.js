@@ -1,5 +1,5 @@
 import Cabecalho from "./cabecalho";
-import DataAtual from "./dataatual";
+import DataAtual from "./dataAtual";
 
 //const DataAtual = require("./dataAtual"); *Quando usar dessa forma?
 
@@ -20,6 +20,8 @@ function Home() {
 }
 
 export default Home;
+
+
 
 
 // export default function Home(){
