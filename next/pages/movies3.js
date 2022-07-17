@@ -1,3 +1,46 @@
+import useSWR from 'swr'
+
+import {useState} from 'react'
+
+
+
+export default function Movies3(){
+
+    const [url, setUrl] = useState('')
+
+    const {data, error} = useSWR(url, theFetcher)
+
+
+
+    const onClickHandler = (e) => {
+
+        e.preventDefault()
+
+        if (url === '') setUrl('http://www.omdbapi.com/?apikey=20cf0b68&s=bagdad')
+
+        else setUrl('')
+
+    }
+
+
+
+    return (
+
+        <div>
+
+            <TheLink url={url} handler={onClickHandler}/>
+
+            <TheMovies data={ error?{error:'Erro na pesquisa'}: data ? data: {Search:''} } show={url !== ''}/>
+
+        
+
+        </div>
+
+    )
+
+}
+
+
 export function TheMovies({data,show}){
 
     if (!show) return (<div></div>)    
@@ -17,6 +60,22 @@ export function TheMovies({data,show}){
     )
 
 }
+
+
+export function TheLink({url, handler}){    
+
+    return (
+
+        <div>
+
+            <a href="/movies3.js" onClick={handler}> {url === '' ? 'Mostrar' : 'Ocultar'} </a>
+
+        </div>
+
+    )
+
+}
+
 
 async function theFetcher(url) {
 
