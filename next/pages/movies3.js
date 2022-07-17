@@ -6,11 +6,26 @@ import {useState} from 'react'
 
 export default function Movies3(){
 
-    const [url, setUrl] = useState('')
+    const [url_0, setUrl_0] = useState('')
+    const [url_1, setUrl_1] = useState('')
+    const [url_2, setUrl_2] = useState('')
+    const [url_3, setUrl_3] = useState('')
 
-    const {data, error} = useSWR(url, theFetcher)
+
+    const resposta_0 = useSWR(url_0, theFetcher)
+    const resposta_1 = useSWR(url_1, theFetcher)
+    const resposta_2 = useSWR(url_2, theFetcher)
+    const resposta_3 = useSWR(url_3, theFetcher)
 
 
+    const [input_0, setInput0] = useState('')
+    const [input_1, setInput1] = useState('')
+    const [input_2, setInput2] = useState('')
+    const [input_3, setInput3] = useState('')
+
+    //const {data, error} = useSWR(url, theFetcher)
+
+    
 
     const onClickHandler = (e) => {
 
