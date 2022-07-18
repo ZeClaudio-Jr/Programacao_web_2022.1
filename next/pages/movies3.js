@@ -152,6 +152,8 @@ export function TheMovies({data,show}){
     const mv =useSWR(urlMv, theFetcher)
     
     const showMovie = (imdbID) => {setUrlMv(`http://www.omdbapi.com/?apikey=20cf0b68&i=${imdbID}`)}
+
+//    const showMv = (imdbID) => {setUrlMv(`http://www.omdbapi.com/?apikey=20cf0b68&i=${imdbID}`)}
     
     
     
@@ -181,6 +183,7 @@ export function TheMv({ data, error}) {
         <div>
 
             <div>{data.Title} --- {data.Year} --- <img style={{height: 185, width: 100}} src={data.Poster} /></div>
+            
         </div>
     )
 }
